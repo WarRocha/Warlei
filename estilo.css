@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+ }
+
+body{
+	font-family: arial, sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 655px;
+    background-size: cover;
+}
+
+header img {
+	float: left;
+    max-width:100%;
+    opacity: 0.8;
+    padding-right: 100px;
+}
+
+nav{
+	padding: 20px;
+	background:black;
+	opacity: 0.7;
+	display: inline-block;
+    float: left;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline;
+	font-weight: bold;
+	padding: auto;
+	font-size: 30px;
+}
+
+nav a{
+	color:#fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav ul li:hover{
+	background: red;
+	transition: all 0.45s;
+	opacity: 0.9;
+	filter:alpha(opacity=90)
+}
+
+
+.serviços{
+	width: 100%;
+    height: 655px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divservços{
+	width: 90%;
+	margin: 90px;
+	display: flex;
+}
+
+.bloco{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	background-color: #212121;
+	color: #fff;
+	opacity: 0.8;
+	text-align: center;
+	float: left;
+	padding: 20px;
+}
+
+.bloco p{
+	line-height: 140%;
+	margin: 15px 0;
+
+}
+
+.bloco:hover{
+	background-color: #e21a1a;
+	opacity: 0.7 
+}
+
+#sobre{
+	width: 100%;
+	height: auto;
+	padding: 250px 0px 250px 0px;
+	background-color: ##4e8f54;
+}
+
+#sobre p{
+	font-size: 45px;
+	text-align: center;
+	padding: 0px 100px 0px 100px;
+}
+
+#contatos{
+	background-color: ##4e2f53;
+	width: 100%;
+	height: auto;
+    text-align: center;
+	padding: 150px 0px 160px 0px;
+}
+	
+#contatos h1{
+	font-size: 60px;
+}
+		
+#contatos p{
+	font-size: 30px;
+	text-align: center;
+}
+
+@keyframes mov{
+	from{top: 1em;}
+	
+} 
+
+#contatos img:hover{
+	animation: mov 1s infinite;
+	position: relative;
+	opacity: 0.7;
+}
+
+footer{
+	color:#808080;
+    font: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+   header img {
+	display:none;
+}
+}
+
+
+
+
+
+
+
+
+
