@@ -5,30 +5,50 @@
           <title>Potfolio</title>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	        <link rel="stylesheet" type="text/css" href="estilo.css">
-     </head>
+          <script type="text/javascript" src = "jquery-3.1.1.min.js"></script>
+      </head>    
+      <script>
+            function menu() {
+            var  pegarMenu = document.getElementById("menu");
+            if (pegarMenu.className === "nav") {
+            pegarMenu.className += " responsivo";
+            } else {
+            pegarMenu.className = "nav";
+            }}
+      </script>
 
- <body>
-           <header>
+      <script type="text/javascript">
+          jQuery(document).ready(function($) {
+               $(".scroll").click(function(event){        
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500 );
+                });
+              });
+       </script>
+
+
+  <body>
+       <header>
              <img src="img/novo2.png">
-              <div id="nav"><br>
-                <nav class="nav"><br>
-                  <ul>
-                     <li><a href="#sobre">SOBRE</a></li>
-                     <li><a href="#serviços">SERVIÇOS</a></li>
-                     <li><a href="#contatos">CONTATOS</a></li>
-                  </ul>
+              <div id="nav">
+                <nav class="nav" id = "menu">
+                   <ul>
+                      <a href="#sobre" class = "scroll"><li>SOBRE</li></a>
+                      <a href="#serviços" class = "scroll"><li>SERVIÇOS</li></a>
+                      <a href="#contatos" class = "scroll"><li>CONTATOS</li></a>
+                      <a href="javascript:void(0);" style="font-size:15px;" class="icone" onclick="menu()"><li>&#9776;</li></a>
+                   </ul>
                 </nav>
               </div>
-            </header>
-
-<!-- about -->
-      <section id="sobre">
+        </header>
+<!-- serviços -->
+        <section id="sobre">
              <div>
                   <p>Sou um Desenvolvedor Front-end, utilizo das mais recentes tecnologias para construir aplicações web de qualidade, com um código correto e eficaz.</p>
              </div>
-	    </section>
+       </section>
 <!-- serviços -->
-      <section class="serviços" id="serviços">
+       <section class="serviços" id="serviços">
              <div class="divservços">
               <div class="bloco">
                       <h3>Recortes HTML/CSS</h3>
@@ -50,9 +70,9 @@
                     <p>Algumas técnicas são aplicadas no desenvolvimento para a elevação de visibilidade e do posicionamento do seu site no Google..</p>
               </div> 
             </div>
-      </section>
+       </section>
 <!-- contacts -->
-      <section id="contatos">
+       <section id="contatos">
             <h1>CONTATOS</h1><br>
             <p>frontwarlei@hotmail.com</p><br>
             <p>Fone:964597290</p><br>
