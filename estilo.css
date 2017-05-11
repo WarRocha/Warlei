@@ -2,8 +2,7 @@
 /* CSS Document */
 *{
 	margin: 0;
-	
- }
+}
 
 body{
 	font-family: arial, sans-serif;
@@ -12,44 +11,47 @@ body{
 header{
 	width: 100%;
 	height: 655px;
-    background-size: cover;
 }
 
-header img {
-	height: 100%;
-	float: left;
-    max-width:100%;
-    opacity: 0.8;
-    padding-right: 100px;}
+video{
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.8;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+}
 
 nav{
-	background:black;
-	opacity: 0.7;
+	float: right;
+	background:;
+	opacity: 0.9;
 	overflow: hidden;
 }
 
 ul li{
 	list-style: none;
+	padding: 10px;
 }
-
 
 nav a{
 	color:#fff;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 25px;
 	float: left;
 	text-align: center;
-  	padding: 16px 20px;
+  	padding: 15px 15px;
   	display: block;
 }
 
 nav ul li:hover{
+	opacity: 0.4;
 	background: red;
 	transition: all 0.45s;
-	opacity: 0.9;
 	filter:alpha(opacity=90)
 }
+
 
 
 .serviços{
@@ -67,8 +69,7 @@ nav ul li:hover{
 }
 
 .bloco{
-	
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	background-color: #212121;
 	color: #fff;
@@ -89,18 +90,17 @@ nav ul li:hover{
 
 .bloco:hover{
 	background-color: #e21a1a;
-
 }
 
 #sobre{
 	width: 100%;
-	height: auto;
-	padding: 250px 0px 250px 0px;
+	height: 655;
+	align-items: center;
 	
 }
 
 #sobre p{
-	margin-bottom: 200px;
+	margin: 200px 0px 200px;
     padding: auto;
     font-size: 45px;
     text-align: center;
@@ -108,9 +108,9 @@ nav ul li:hover{
 
 #contatos{
 	width: 100%;
-	height: auto;
+	height: 655;
     text-align: center;
-	padding: 150px 0px 160px 0px;
+	margin: 200px 0px 200px
 }
 	
 #contatos h1{
@@ -121,8 +121,6 @@ nav ul li:hover{
 	font-size: 30px;
 	text-align: center;
 }
-
-
 
 #contatos img:hover{
 	animation: mov 1s infinite;
@@ -135,11 +133,12 @@ footer{
     font: 100px;
     text-align: center;
 }
+
 .icone {
 	display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 650px){
 	header img{
 		display: none
 	}
@@ -149,14 +148,15 @@ footer{
     }
 	.nav a{
 		display: none;
+		font-size: 20px;
 	}
    .nav a.icone{
    		float: right; 
    		display: block;
-   }
+    }
    .nav.responsivo{
    	    position: relative;
-   }
+    }
    .nav.responsivo .icone {
 		position: absolute;
 		right: 0;
@@ -166,8 +166,22 @@ footer{
    		display: block;
    		float: none;
    		text-align: left;
-   }
-}
+    }
+   .divservços{
+   	width: 100%;
+   	display: block;
+   	margin: 0px;
+   	} 
+
+
+
+
+
+
+
+
+
+
 
 
 
