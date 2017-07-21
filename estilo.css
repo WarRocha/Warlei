@@ -4,7 +4,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	border: 1px solid black;
 }
 
 body{
@@ -23,7 +22,6 @@ header{
 	animation-duration: 10s;
 	animation-iteration-count: 500;
 	animation-direction: alternate;
-
 }
 
 .logo{
@@ -49,7 +47,7 @@ nav{
 }
 
 nav a{
-	 color: #fff;
+	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 25px;
@@ -99,13 +97,11 @@ nav ul li:hover{
 }
 
 .bloco{
-
-	-webkit-transform: skew(-7deg); 
+    -webkit-transform: skew(-7deg); 
     -ms-transform: skew(-7deg); 
     -moz-transform: skew(-7deg);
     -o-transform: skew(-7deg);
     transform: skew(-7deg);
-
     display: flex;
 	flex-direction: column;
 	background-color: #212121;
@@ -157,8 +153,8 @@ footer{
 	background-color: #e21a1a;
 	padding: 5px;
 	color:#f1f1f1;
-    text-align: center;
-    opacity: 0.7;
+        text-align: center;
+        opacity: 0.7;
 }
 
 .icone {
