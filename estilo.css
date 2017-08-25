@@ -21,7 +21,6 @@ header{
 	animation-duration: 10s;
 	animation-iteration-count: 500;
 	animation-direction: alternate;
-
 }
 
 .logo{
@@ -46,22 +45,25 @@ nav{
 	opacity: 0.70;
 }
 
-nav a{
-	 color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 25px;
-	float: left;
-  	padding: 15px 15px;
-  	display: block;
-}
-
 nav ul{
 	list-style: none;
 
 }
 
-nav ul li:hover{
+nav li{
+	display: inline;
+}
+
+nav a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	float: left;
+  	padding: 15px 15px;
+}
+
+nav a:hover{
 	opacity: 0.4;
 	background: red;
 	transition: all 0.45s;
@@ -76,10 +78,10 @@ nav ul li:hover{
 }
 
 #sobre p{
-	  color: #353333;
-      font-size: 40px;
-      text-align: center;
-      margin: 0px 70px 0px 70px;
+	color: #353333;
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 70px 0px 70px;
 }
 
 #serviços{
@@ -97,8 +99,7 @@ nav ul li:hover{
 }
 
 .bloco{
-
-	-webkit-transform: skew(-7deg); 
+    -webkit-transform: skew(-7deg); 
     -ms-transform: skew(-7deg); 
     -moz-transform: skew(-7deg);
     -o-transform: skew(-7deg);
@@ -177,89 +178,89 @@ footer{
 @media screen and (max-width: 650px){
 
 	header{
-	width: 100%;
-	height: 655px;
-	background-image: url(img/imgmobile.jpg)
+	   width: 100%;
+	   height: 655px;
+	   background-image: url(img/imgmobile.jpg)
 	}
 
 	header img{
 		display: none;
 	}
 
-
-
     .nav{
-     position: relative;
-     top: 1px;
-     margin-right: 15px;
+      position: relative;
+      top: 1px;
+      margin-right: 15px;
      }
 
    .nav a{
-	display: none;
-	font-size: 15px;
+	  display: none;
+	  font-size: 15px;
 	}
 
    .nav a.icone{
-   	float: right; 
-   	display: block;
+   	   float: right; 
+   	   display: block;
     }
 
    .nav.responsivo{
-   	position: relative;
+   	    position: relative;
     } 
 
    .nav.responsivo .icone {
-	position: absolute;
-	right: 0;
-	top: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
 	}
 
    .nav.responsivo a{
-    display: block;
-   	float: none;
-   	text-align: left;
+        display: block;
+      	float: none;
+   	    text-align: left;
     }
 
     #sobre {
-     padding: 0px;
-     margin: 20px 0px 20px 0px;
+        padding: 0px;
+        margin: 70px 0px 70px 0px;
       
     }
 
     #sobre p{
-     font-size: 35px;
-     margin: 20px 50px 20px 50px;
+        font-size: 35px;
+        margin: 20px 50px 20px 50px;
 
     }
     
     .serviços{
-     height: 0px;
-     margin: 25px 0px 25px 0px;
+        height: 0px;
+        margin: 25px 0px 25px 0px;
 
     }
 
    .divservços{
-   	width: 100%;
-   	display: block;
-   	margin: 0px;
+     	width: 100%;
+     	display: block;
+   	    margin: 0px;
    	} 
 
     .bloco{
-     transform: none;
+        transform: none;
     }
 
     #contatos{
-	margin: 70px 0px 70px 0px;
+	    margin: 100px 0px 100px 0px;
     }
    
-   #contatos h1{
-   	font-size: 30px;
-   	margin-bottom: 5px;
+    #contatos h1{
+   	   font-size: 36px;
+   	   margin-bottom: 5px;
 	
     }
 
-    #contatos h2{
-   	font-size: 15px;
-   	margin-bottom: 5px;
+    #contatos p{
+     	font-size: 20px;
+   	    margin-bottom: 5px;
 	
     }
+
+ 
