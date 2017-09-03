@@ -7,7 +7,7 @@
           <link rel="stylesheet" type="text/css" href="estilo.css">
           <script type="text/javascript" src = "jquery-3.1.1.min.js"></script>
       </head>    
-      <script>
+      <script type="text/javascript">
             function menu() {
             var  pegarMenu = document.getElementById("menu");
             if (pegarMenu.className === "nav") {
@@ -18,21 +18,21 @@
       </script>
 
       <script type="text/javascript">
-          jQuery(document).ready(function($) {
-               $(".scroll").click(function(event){        
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500 );
-                });
-              });
+            jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){        
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500 );});
+            });
        </script>
-
 
   <body>
        <header> 
+          <div>
              <img src="img/imgsite1-min.jpg" class="img">
-             <img src="img/logo-min.png" class="logo">
+             <img src="img/logo.png" class="logo">
+          </div>
 
-             <nav class="nav" id = "menu">
+          <nav class="nav" id = "menu">
                 <ul>
                   <li><a href="#sobre" class = "scroll">SOBRE</a></li>
                   <li><a href="#serviços" class = "scroll">SERVIÇOS</a></li>
@@ -48,44 +48,43 @@
              </div>
         </article>
 <!-- serviços -->
-       <section id="serviços">
+       <article id="serviços">
              <div class="divservços">
-              <div class="bloco">
-                      <h3>HTML/CSS</h3>
-                       <p>Recortar ou fatiar em HTML e CSS significa transformar o desenho do seu site em páginas próprias para internet.</p>
-              </div>
+             <div class="bloco">
+                    <h2>HTML/CSS</h2>
+                    <p>Recortar ou fatiar em HTML e CSS significa transformar o desenho do seu site em páginas próprias para internet.</p>
+             </div>
 
-              <div class="bloco">
-                    <h3>Sites Responsivos</h3>
+             <div class="bloco">
+                    <h2>Sites Responsivos</h2>
                     <p>Desenvolvimento de sites que se adaptam nos principais tamanhos de tela do mercado, incluindo tablets e celulares (mobile).</p>
-              </div> 
+             </div> 
 
-               <div class="bloco" id="blocores">
-                    <h3>Painel Wordpress</h3>
+             <div class="bloco" id="blocores">
+                    <h2>Painel Wordpress</h2>
                     <p>Opcão de aplicação e utilização do principal CMS do mercado mundial atualmente para a gestão do conteúdo geral do site.</p>
-              </div> 
+             </div> 
 
-               <div class="bloco">
-                    <h3>SEO</h3>
+             <div class="bloco">
+                    <h2>SEO</h2>
                     <p>Algumas técnicas são aplicadas no desenvolvimento para a elevação de visibilidade e do posicionamento do seu site no Google..</p>
-              </div> 
-            </div>
-       </section>
+             </div> 
+             </div>
+       </article>
 <!-- contacts -->
        <section id="contatos">
             <h1>CONTATOS</h1>
-            <p>frontwarlei@hotmail.com</p>
-            <p>Fone:964597290<p>
-            <a href="https://www.facebook.com/warlei.s.rocha" target="_blank">
-            <img title="facebook" alt="facebook" src="img/facebook.png" /></a>
-            <a href="https://www.linkedin.com/in/warlei-rocha-9bb03261/" target="_blank">
-            <img title="linkedin" alt="linkedin" src="img/linkedin.png" /></a>
-            <a href="https://github.com/WarRocha" target="_blank">
-            <img title="github" alt="github" src="img/github.png" /></a>
+            <h2>frontwarlei@hotmail.com</h2>
+            <h2>Fone:96459-7290<h2>
+            <div>
+               <a href="https://www.facebook.com/warlei.s.rocha" target="_blank"><img title="facebook" alt="facebook" src="img/facebook.png"/></a>
+               <a href="https://www.linkedin.com/in/warlei-rocha-9bb03261/" target="_blank"><img title="linkedin" src="img/linkedin.png"/></a>
+               <a href="https://github.com/WarRocha" target="_blank"><img title="github" alt="github" src="img/github.png"/></a>
+            </div>
       </section>
 
       <footer>
-             <p>© Copyright 2017 Warlei personal portfolio</p>
+           <p>© Copyright 2017 Warlei personal portfolio</p>
       </footer>
 
   </body>
