@@ -17,6 +17,7 @@ header{
 .img{
 	width: 100%;
 	opacity: 0.90;
+
 	animation-name: animacao-img;
 	animation-duration: 10s;
 	animation-iteration-count: 500;
@@ -32,17 +33,18 @@ header{
 
 	animation-name: animacao-logo;
 	animation-duration: 5s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1.2s;
 }
 
 nav{
 	position: relative;
-	top: -763px;
+	top: -1025px;
 	transform: skew(-7deg);
     background-color: black;
 	float: right;
 	margin-right: 20px;
 	opacity: 0.70;
+	animation:fadeInDownBig 1s;
 }
 
 nav ul{
@@ -78,7 +80,7 @@ nav a:hover{
 }
 
 #sobre p{
-    color: #353333;
+	color: #353333;
     font-size: 40px;
     text-align: center;
     margin: 0px 80px 0px 80px;
@@ -141,14 +143,20 @@ nav a:hover{
 }
 		
 #contatos h2{
-	color: #353333;
-	font-size: 30px;
-	text-align: center;
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	font-size: arial;
+	color:  #353333;
 }
 
 #contatos img:hover{
 	opacity: 0.7;
 	color:#f1f1f1;
+}
+
+#contatos div{
+	 margin-top: 10px;
 }
 
 footer{
@@ -172,6 +180,18 @@ footer{
 @keyframes animacao-logo{
 	from {width: 45%;}
 	to {width: 30%;}
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 
