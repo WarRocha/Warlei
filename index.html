@@ -6,25 +6,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link rel="stylesheet" type="text/css" href="estilo.css">
           <script type="text/javascript" src = "jquery-3.1.1.min.js"></script>
-      </head>    
-      <script type="text/javascript">
-            function menu() {
-            var  pegarMenu = document.getElementById("menu");
-            if (pegarMenu.className === "nav") {
-            pegarMenu.className += " responsivo";
-            } else {
-            pegarMenu.className = "nav";
-            }}
-      </script>
-
-      <script type="text/javascript">
-            jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){        
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500 );});
-            });
-       </script>
-
+      </head>   
   <body>
        <header> 
           <div>
@@ -86,6 +68,7 @@
       <footer>
            <p>© Copyright 2017 Warlei personal portfolio</p>
       </footer>
+      <script type="text/javascript" src = "jquery-3.1.1.min.js"></script>
 
   </body>
 </html>
